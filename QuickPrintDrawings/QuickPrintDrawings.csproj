@@ -98,7 +98,8 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>copy "$(TargetPath)" C:\TeklaStructures\18.1\nt\bin\applications\Tekla\Model
-copy "$(ProjectDir)\bitmaps\*.bmp" C:\TeklaStructures\18.1\nt\bitmaps</PostBuildEvent>
+copy "$(ProjectDir)\bitmaps\*.bmp" C:\TeklaStructures\18.1\nt\bitmaps
+copy "$(ProjectDir)\macros\*.cs" C:\TeklaStructures\18.1\environments\common\macros\modeling</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
